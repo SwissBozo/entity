@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#defaultCanvas0 canvas {
+    width: 100vh !important;
+    height: 100vw !important;
+  } 
+
+/* ---------- DAT.GUI--------------*/
+
+/* MAIN */
+
+#p5_loading {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .close-button {
+      display: none;
+  }
+
+.dg {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+.dg .closed li.title {
+    background-image: none;
+}
+
+div.dg:nth-child(3) {
+    width: 100% !important;
+}
+
+li.cr:nth-child(2),
+li.cr:nth-child(3),
+li.cr:nth-child(4),
+li.cr:nth-child(5),
+li.cr:nth-child(6),
+li.cr:nth-child(7) {
+    background-color: #000000 !important;
+}
+
+/* TEXT */
+
+.dg .c input[type="text"] {
+    background: #000000;
+}
+
+.dg .c input[type="text"]:hover {
+    background: #000000;
+}
+
+.dg .cr.number input[type="text"] {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* SLIDER */
+
+.title {
+    color: #000000;
+    font-size: larger;
+    padding-left: 10px !important;
+}
+
+.dg li:not(.folder) {
+    background: #ffffff;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ffffff;
+}
+
+.dg .c .slider {
+    background: #000000;
+    cursor: ew-resize;
+}
+
+.dg .c .slider:hover {
+    background: #000000;
+    cursor: ew-resize;
+}
+
+.dg .c .slider .slider-fg {
+    background: #ffffff;
+}
+
+.dg .c .slider:hover .slider-fg {
+    background: #ffffff;
+}
+
+/* LEFT BORDER WINDOW */
+
+.dg .cr.number {
+    border-left: none;
+}
+
+/* ----------------- MEDIA QUERIES ------------------- */
+
+/* @media only screen and (max-width: 900px) {
+    .dg.main {
+        width: 100% !important;
+        margin-right: 0;
+    }
+} */

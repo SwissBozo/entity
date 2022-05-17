@@ -1,0 +1,49 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.main-content {
+    color: white;
+    font-size: 1.5vw;
+    margin: 0 100px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.inner {
+    text-align: center;
+}
+
+.caution {
+    color: red;
+}
+
+a {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+
+video {  
+    opacity: 0.3; /* ! */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

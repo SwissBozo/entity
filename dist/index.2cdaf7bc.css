@@ -1,0 +1,13 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+    body {
+    margin: 0;
+    display: flex;
+        
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
